@@ -22,10 +22,14 @@
 	border-radius:30px;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+  color:#ffffff;
+  
+  
 	font-family:Arial;
 	font-size:17px;
   padding:11px 16px;
+  margin-top: 108px;
+  margin-left: 10px;
   
 	text-decoration:none;
 	text-shadow:10px 1px 20px #2f6627;
@@ -58,6 +62,31 @@
 	background-color:#5cbf2a;
 }
 .btn_operater:active {
+	position:relative;
+	top:1px;
+}
+
+.btn_zero {
+  width: 60px;
+  height: 60px;
+  float: left;
+  padding: 0;
+  margin: 5px;
+  box-sizing: border-box;
+  background: #ecedef;
+  border: none;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #5E5858;
+  cursor: pointer;
+}
+.btn_zero:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.btn_zero:active {
 	position:relative;
 	top:1px;
 }
