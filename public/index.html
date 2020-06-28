@@ -10,38 +10,41 @@
     
     <div class="container_"> 
         <div class="input_container">
-        <input class="input" type="number" name="" id="">
+        <input placeholder="0" class="input" type="text" name="result" id="result">
 </div>
 <div class="number_container">
     <center>
-        <div> <button class = "btn_number">C</button>
-        <button  class = "btn_number">(</button>
-        <button  class = "btn_number">)</button>
-        <button  class = "btn_number">/</button> </div>
+        <div> <button onclick= "clearReasult()" class = "btn_number">C</button>
+        <button onclick= "getnumber('(')" class = "btn_number">(</button>
+        <button onclick= "getnumber(')')" class = "btn_number">)</button>
+        <button onclick= "getnumber('/')" class = "btn_number">/</button> </div>
 
-        <div> <button class = "btn_number">7</button>
-            <button  class = "btn_number">8</button>
-            <button class = "btn_number">9</button>
-            <button class = "btn_operater">*</button> </div>
+        <div> <button onclick= "getnumber('7')" class = "btn_number">7</button>
+            <button onclick= "getnumber('8')"  class = "btn_number">8</button>
+            <button onclick= "getnumber('9')" class = "btn_number">9</button>
+            <button onclick= "getnumber('*')" class = "btn_operater">*</button> </div>
     
 
     
-    <div> <button  class = "btn_number">4</button>
-        <button  class = "btn_number">5</button>
-        <button  class
-         = "btn_number">6</button>
-        <button class = "btn_operater">-</button> </div>
+    <div><button onclick= "getnumber('4')" class = "btn_number">4</button>
+        <button onclick= "getnumber('5')"  class = "btn_number">5</button>
+        <button  onclick= "getnumber('6')" class= "btn_number">6</button>
+        <button onclick= "getnumber('-')" class = "btn_operater">-</button> </div>
 
-    <div> <button  class = "btn_number">1</button>
-            <button  class = "btn_number">2</button>
-            <button  class = "btn_number">3</button>
-            <button   class = "btn_operater">+</button> </div>    
+    <div>
+            <button onclick= "getnumber('1')"  class = "btn_number">1</button>
+            <button onclick= "getnumber('2')"  class = "btn_number">2</button>
+            <button onclick= "getnumber('3')"  class = "btn_number">3</button>
+        <button onclick= "getnumber('+')" class = "btn_operater">+</button> </div>    
 
-    <div> <button  class ="btn_number">0</button>
+    <div> <button  onclick= "getnumber('0')" class ="btn_number">0</button>
                 
-                <button class = "btn_operater">.</button>
-                <button class = "btn_equal">=</button></center> </div>
+                <button onclick= "getnumber('.')" class = "btn_operater">.</button>
+                <button onclick= "get_result()" class = "btn_equal">=</button></center> </div>
+
+
             </div>
+         <script src="app.js"></script>   
  </div>   
 </body>
 </html>
